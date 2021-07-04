@@ -26,3 +26,7 @@ whackamole::run_app()
 ```
 
 and have fun!
+
+## The game in action
+
+![](imgs/whackamole.gif)
