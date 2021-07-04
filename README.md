@@ -6,7 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Simple Whack-A-Mole game in Shiny.
+A simple Whack-A-Mole game in Shiny. This implementation is based on the
+original game made by [Wes Bos](https://wesbos.com/) as part of his  
+[Javascript 30](https://javascript30.com/) challenge. Thanks Wes for all
+the nice videos and tutorials!
 
 ## Installation
 
