@@ -13,7 +13,7 @@ the nice videos and tutorials!
 
 ## Installation
 
-And this package from [GitHub](https://github.com/) with:
+Install this package from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -33,6 +33,3 @@ and have fun!
 ## The game in action
 
 ![](imgs/whackamole.gif)
-
-The game does not look that slow, there’s a problem with the .gif I
-can’t figure out yet.
