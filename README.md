@@ -29,4 +29,5 @@ and have fun!
 
 ## The game in action
 
-![](imgs/whackamole.gif)
+![](imgs/whackamole.gif) The game does not look that slow, there’s a
+problem with the .gif I can’t figure out yet.
