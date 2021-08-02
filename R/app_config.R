@@ -1,19 +1,19 @@
-app_sys = function(...) {
+app_sys <- function(...) {
   system.file(..., package = "whackamole", mustWork = TRUE)
 }
 
-.onLoad = function(libname, pkgname) {
+.onLoad <- function(libname, pkgname) {
   shiny::addResourcePath(
     prefix = "www",
-    directoryPath =  app_sys("www")
+    directoryPath = app_sys("www")
   )
 }
 
-.onUnload = function(libname, pkgname) {
+.onUnload <- function(libname, pkgname) {
   shiny::removeResourcePath("www")
 }
 
-HOLES_N = 6
-TIME_MIN = 200
-TIME_MAX = 1000
-DURATION = 10000
+HOLES_N <- 6
+TIME_MIN <- 300
+TIME_MAX <- 1000
+DURATION <- 10000

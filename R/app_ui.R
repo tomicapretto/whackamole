@@ -1,5 +1,5 @@
 #' @importFrom shiny tags
-app_ui = function() {
+app_ui <- function() {
   shiny::tagList(
     tags$html(
       tags$head(
@@ -32,15 +32,29 @@ app_ui = function() {
           ),
           shiny::actionButton(
             inputId = "stop",
-            label= "Stop"
+            label = "Stop"
           )
         ),
         tags$div(
           class = "game",
           lapply(seq(HOLES_N), make_hole_div)
+        ),
+        tags$div(
+          class = "progress-container",
+          tags$div(
+            id = "time-left",
+            class = "progress-time",
+            paste(round(DURATION / 1000), "seconds")
+          ),
+          tags$div(
+            class = "progress-bar-container",
+            tags$div(
+              id = "bar",
+              class = "progress-bar"
+            )
+          )
         )
       )
     )
-
   )
 }

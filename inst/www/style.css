@@ -4,14 +4,16 @@ html {
   background: #ffc600;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
 }
 
 h1 {
@@ -22,7 +24,7 @@ h1 {
 }
 
 .score {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 0 3rem;
   line-height: 1;
   border-radius: 1rem;
@@ -46,22 +48,22 @@ h1 {
   display: block;
   background: url(dirt.svg) bottom center no-repeat;
   background-size: contain;
-  content: '';
+  content: "";
   width: 100%;
-  height:70px;
+  height: 70px;
   position: absolute;
   z-index: 2;
   bottom: -30px;
 }
 
 .mole {
-  background: url('mole.svg') bottom center no-repeat;
+  background: url("mole.svg") bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
 
 .hole.up .mole {
@@ -72,16 +74,16 @@ h1 {
   width: 250px;
   display: flex;
   margin: 20px auto;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .btn-default {
   border-radius: 0.5rem;
   padding: 0 2rem;
   font-size: 3rem;
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-weight: bold;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border: 2px solid #bc8c04;
   transition-duration: 0.2s;
 }
@@ -90,4 +92,37 @@ h1 {
   background-color: #845c04;
   border: 2px solid #614104;
   color: white;
+}
+
+.progress-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 80px auto;
+  width: 580px;
+}
+
+.progress-time {
+  color: black;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.progress-bar-container {
+  background: transparent;
+  border-radius: 10px;
+  display: flex;
+  flex: 10;
+  height: 15px;
+  width: 100%;
+}
+
+.progress-bar {
+  background: #614104;
+  flex-basis: 0%;
+  flex: 0;
+  height: 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
 }
